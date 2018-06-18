@@ -1,0 +1,30 @@
+<div class="container"><h1><b>SIGN UP</b></h1></div>
+<hr>
+<font color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Please Fill Up All The Fields For SignUp</font>
+<div class="container">
+  <label>Email_Id:-</label>
+<div class="form-group"><input class="form-control" type="email" placeholder="Email id" [(ngModel)]="Email_Id"> </div>
+<label>Password:-</label>
+<div class="form-group"><input class="form-control" type="text" placeholder="Password" [(ngModel)]="Password"></div>
+<label>Username:-</label>
+<div class="form-group"><input class="form-control" type="text" placeholder="Username" [(ngModel)]="Username"> </div>
+<label>Mobile:-</label>
+<div class="form-group"><input class="form-control" type="text" placeholder="Mobile" [(ngModel)]="Mobile"> </div>
+<label>City:-</label>
+<div class="form-group"><input class="form-control" type="text" placeholder="city" [(ngModel)]="City"> </div>
+<div><b>Gender:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            male<input type="radio" name="rdo1" value="male" [(ngModel)]="rbtn1" >
+            female<input type="radio" name="rdo1" value="female" [(ngModel)]="rbtn1" ></b>
+ </div>
+ <br>
+ <label>Address:-</label>
+ <div class="form-group"><input class="form-control" type="text" placeholder="Address" [(ngModel)]="Address"> </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+            <button class="btn btn-lg btn-primary form-control" (click)="onSignup()">SIGN UP</button>
+    </div>
+    <div class="col-md-6">
+            <button class="btn btn-lg btn-danger form-control" (click)="onBack()">CANCEL</button>
+    </div>
+  </div>
